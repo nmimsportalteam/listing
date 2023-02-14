@@ -1,0 +1,54 @@
+.main-header .main-nav {
+    background: #2e3f6e;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+.main-header .top-nav {
+    background: #2e3f6e;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.main-logo img {
+    width: 150px;
+}
+
+.main-header .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-left: 70px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    background: #3d528b;
+    cursor: pointer;
+}
+
+.main-header .search .pipe {
+    font-size: 9px;
+    color: #c5c5c5;
+    font-weight: 800;
+}
+
+.main-header .search .fa-magnifying-glass {
+    color: #3eaafd;
+    font-size: 10px;
+}
+
+.main-header .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #2e315a;
+    color: #c5c5c5;
+}
