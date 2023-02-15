@@ -1,0 +1,49 @@
+.listing-hero-section{
+    background-image: url('../images/tyler-springhetti-mKizNwDrLh4-unsplash.jpg');
+    padding-top: 250px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.listing-hero-section h1{
+    color: #fff;
+}
+
+
+.geodir-category-location a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-single-header-column{
+
+}
+
+.border_bottom{
+    contain: '';
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.transparent-btn{
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    border: 1px dashed rgba(255,255,255, 0.21);
+    background: rgba(255,255,255, 0.11);
+    color: #fff;
+}
+.transparent-btn:hover{
+    background: #0d6efd40
+}
+
+
+.listing-hero-section ul{
+    list-style: none;
+}
+
+.listing-hero-section ul li{
+float: left;
+padding: 15px;
+color:#fff;
+}
