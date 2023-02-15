@@ -21,14 +21,14 @@
 }
 
 .main-logo img {
-    width: 150px;
+    width: 200px;
 }
 
 .main-header .search {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    width: 250px;
     height: 45px;
     margin-left: 70px;
     padding: 10px 40px;
@@ -36,7 +36,7 @@
     position: relative;
     color: #fff;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     background: #3d528b;
     cursor: pointer;
 }
@@ -49,7 +49,7 @@
 
 .main-header .search .fa-magnifying-glass {
     color: #3eaafd;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .top-nav .right {
