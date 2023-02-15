@@ -10,8 +10,14 @@
 
 .main-header .top-nav {
     background: #2e3f6e;
-    padding: 10px 20px;
+    padding-left: 20px;
     display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
 }
 
 .main-logo img {
@@ -23,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     width: 150px;
+    height: 45px;
     margin-left: 70px;
     padding: 10px 40px;
     border-radius: 30px;
@@ -43,6 +50,50 @@
 .main-header .search .fa-magnifying-glass {
     color: #3eaafd;
     font-size: 10px;
+}
+
+.top-nav .right {
+    margin-left: auto;
+    padding: 0 20px;
+    background: #3d528b;
+    width: 450px;
+    height: 74px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav .right span{
+    color: #ddd;
+}
+
+.top-nav .right::before {
+    content: "";
+    border-top: 74px solid #2e3f6e;
+    border-right: 50px solid #3d528b;
+    position: absolute;
+    top: 0;
+    left: -48px;
+}
+
+.top-nav .right a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-nav .add-listing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 4px solid #c7c7c763;
+}
+
+.top-nav .add-listing img {
+    width: 16px;
+    margin-right: 8px;
 }
 
 .main-header .nav {
