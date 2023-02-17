@@ -48,26 +48,33 @@ padding: 15px;
 color:#fff;
 }
 
+
+
+
 .scroll-navbar{
-    background: #e5e5e5ba;
-    position: absolute;
-    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.scroll-navbar ul{
-    padding: 0px;
-}
-
-.scroll-navbar ul li{
-    padding: 15px;
-    list-style: none;
+    background-color: #333;
+  }
+  .scroll-navbar ul {
+   list-style-type: none;
+     margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .scroll-navbar li {
     float: left;
-    cursor: pointer;
-}
+  }
+  
+  .scroll-navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+  }
+  
+  .scroll-navbar li a:hover {
+    background-color: #111;
+  }
 
-.scroll-navbar li:hover{
-   background-color: #2e3f6e;
-   color: #fff;
-   delay: 5s;
-}
