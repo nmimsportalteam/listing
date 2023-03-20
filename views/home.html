@@ -45,8 +45,10 @@
                     Add Listing
                 </button>
             </div>
+            <button id="navbar-toggler" class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
-
         <ul class="nav">
             <li>Buy</li>
             <li>Sell</li>
@@ -56,8 +58,6 @@
             <li>Blog</li>
             <li>About</li>
         </ul>
-
-
     </header>
 
     <section id="main-banner">
@@ -66,16 +66,74 @@
             <p>Find some of the best deal in the city.</p>
 
             <div id="banner-search">
-                
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass text-info"></i>
+                    <input type="text" placeholder="What are you looking for?" />
+                </div>
+
+                <div class="location">
+                    <i class="fa-solid fa-location-dot text-info"></i>
+                    <input type="text" placeholder="Location" />
+                </div>
+
+                <div class="filters">
+                    <i class="fa-solid fa-filter text-info"></i>
+                    <input type="text" placeholder="Filters" />
+                </div>
+
+                <div class="search-btn justify-content-end">
+                    <button class="btn btn-sm p-0">
+                        <span>Search</span>
+                        <img src="../public/images/icons/search.png" />
+                    </button>
+                </div>
             </div>
 
+            <hr class="horizontal-divider" />
+            <div class="categories">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Navi Mumbai</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Mumbai</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Pune</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Bangalore</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
+        <i class="down fa-solid fa-angles-down"></i>
     </section>
 
+    <section id="home-stats">
+        <h3 class="text-center section-heading">Featured Builders Around You</h3>
+        <hr class="horizontal-divider1" />
 
+        <!-- <div class="listing-1">
+            <a href="#" class="">
+                <img src="https://townhub.kwst.net/images/all/60.jpg" class="img-fluid"/>
+            </a>
+            <h4>HELLO</h4>
+        </div> -->
 
-
-
+    </section>
 
 
     <script src="../public/js/bootstrap-5.3.0-alpha1-bundle.min.js">

@@ -1,3 +1,24 @@
+body {
+    color: #697891;
+}
+
+.horizontal-divider {
+    width: 80px;
+    margin: 25px auto;
+    display: block;
+    border: 1px solid #4DB7FE;
+    opacity: 0.5;
+    border-radius: 4px;
+}
+
+.horizontal-divider1 {
+    width: 80px;
+    margin: 25px auto;
+    display: block;
+    border: 2px solid #4DB7FE;
+    border-radius: 4px;
+    opacity: 1;
+}
 
 /*======================= HEADER CSS ===========================*/
 .main-header .main-nav {
@@ -147,6 +168,14 @@
     margin: 0 30px;
 }
 
+.section-heading {
+    text-align: center;
+    color: #697891;
+    font-size: 34px;
+    font-weight: 800;
+    position: relative;
+}
+
 /*======================= BANNER CSS ===========================*/
 #main-banner {
     height: 500px;
@@ -171,10 +200,232 @@
 }
 
 #banner-search {
-    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 900px;
     height: 60px;
     background: #fff;
     margin: auto;
     border-radius: 10px;
     outline: 5px solid #ffffff3b;
+}
+
+#banner-search>* {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+#banner-search>*:nth-child(1) {
+    border-right: 1px solid #d4d4d4;
+}
+
+#banner-search>*:nth-child(2) {
+    border-right: 1px solid #d4d4d4;
+}
+
+#banner-search .search-btn {
+    width: unset;
+    padding: 0;
+}
+
+#banner-search .search-btn span {
+    display: none;
+}
+
+#banner-search .search {
+    padding-left: 0;
+}
+
+
+
+#banner-search input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+}
+
+#banner-search input:focus {
+    outline: none;
+}
+
+#main-banner .categories .cat {
+    background: linear-gradient(45deg, white, #bde8ff);
+    color: #000;
+    width: 120px;
+    height: 65px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+#main-banner .categories .cat p {
+    margin: 0;
+}
+
+#main-banner .categories a {
+    text-decoration: none;
+}
+
+
+
+#navbar-toggler {
+    margin-right: 20px;
+    margin-left: auto;
+    border-radius: 5px;
+    display: none;
+    width: 40px;
+    background: linear-gradient(45deg, #abe3ff, white);
+}
+
+#main-banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/background/curve.svg);
+    bottom: -29px;
+    left: 0;
+    z-index: 1;
+}
+
+#main-banner .down {
+    position: absolute;
+    bottom: 5px;
+    right: calc(50% - 8px);
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #3eaaf2;
+}
+
+#main-banner .down:hover {
+    transform: scale(1.2);
+}
+
+#home-stats {
+    background: #fff;
+    padding: 30px;
+}
+
+
+/* listing card */
+.listing-1 {
+    width: 500px;
+    /* background: url('https://townhub.kwst.net/images/all/60.jpg'); */
+}
+
+.listing-1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width: 1044px) {
+    .main-logo img {
+        width: 130px;
+    }
+
+    .top-nav .right {
+        width: 373px;
+        height: 74px;
+    }
+
+    .main-header .search {
+        width: 145px;
+        margin-left: 25px;
+        padding: 10px 21px;
+        font-size: 13px;
+    }
+
+    .main-header .nav {
+        padding: 6px 0px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main-header .top-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .top-nav .right {
+        display: none;
+    }
+
+    .main-header .search {
+        display: none;
+    }
+
+    .main-header .nav {
+        display: none;
+    }
+
+    #navbar-toggler {
+        display: block;
+        height: 28px;
+        line-height: 14px;
+    }
+
+    #main-banner .content {
+        position: unset;
+    }
+
+    #main-banner {
+        height: unset;
+    }
+}
+
+@media(max-width: 480px) {
+    #banner-search {
+        flex-wrap: wrap;
+        height: unset;
+    }
+
+    #banner-search>* {
+        border-right: unset !important;
+        border-bottom: 1px solid #ddd;
+        padding: 0;
+        height: unset;
+    }
+
+    #banner-search .search-btn {
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    #banner-search .search-btn span {
+        display: unset;
+    }
+
+    #banner-search .search-btn img {
+        display: none;
+    }
+
+    #banner-search .search-btn button {
+        padding: 5px 15px !important;
+        margin: 11px;
+        background: #2e3f6e;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    #main-banner .content {
+        padding: 100px 15px;
+    }
 }
