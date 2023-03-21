@@ -138,10 +138,10 @@ body {
     outline: 3px solid #e1e1e14a;
     background: linear-gradient(45deg, #abe3ff, white);
     border: 0;
-    padding: 8px 25px;
+    padding: 10px 27px;
     border-radius: 20px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     transition: 0.2s;
 }
 
@@ -149,6 +149,8 @@ body {
     background: linear-gradient(45deg, #dbdbdb, white);
     outline: none;
 }
+
+
 
 
 .top-nav .add-listing img {
@@ -159,13 +161,16 @@ body {
 .main-header .nav {
     display: flex;
     justify-content: center;
-    padding: 6px 20px;
-    background: #2e315a;
+    padding: 10px 20px;
+    background: linear-gradient(360deg, #2e3f6e, #3d528b);
     color: #eee;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .main-header .nav li {
     margin: 0 30px;
+    cursor: pointer;
 }
 
 .section-heading {
