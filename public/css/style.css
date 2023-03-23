@@ -1,5 +1,6 @@
 body {
     color: #697891;
+    font-family: 'Roboto';
 }
 
 .horizontal-divider {
@@ -326,7 +327,7 @@ body {
 
 /* listing card */
 .listing-1 {
-    width: 439px;
+    /* width: 439px; */
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -346,8 +347,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2e3f6e8a;
-    /* padding: 10px; */
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -358,11 +357,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 10px 0px 10px;
+    flex-wrap: wrap;
 }
 
 .listing-1 .content .header .badge {
-    background: #00a552;
+    background: linear-gradient(45deg, #9dffa2, #fffd85);
     padding: 7px 15px;
+    color: #000;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 .listing-1 .content .header .add-to-wishlist {
@@ -377,16 +380,36 @@ body {
 
 .listing-1 .content .body {
     padding: 10px 10px 0px 10px;
-    background: rgb(0 0 0 / 34%);
+    background: rgb(0 0 0 / 50%);
 }
 
 .listing-1 .content .body .title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .listing-1 .content .body .description {
     font-size: 12px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.listing-1 .content .body .description .badge {
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background: #fff;
+    color: #000;
+}
+
+.listing-1 .content .body .description .badge.location {
+    color: #00106d;
+    background: linear-gradient(45deg, #9dffa2, #fffd85)
+}
+
+.listing-1 .content .body .description .badge.location i {
+    color: green;
 }
 
 
@@ -396,8 +419,31 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgb(0 0 0 / 50%);
 }
 
+.listing-1 .content .footer .actions span{
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.listing-1 .content .footer .actions .phone {
+    background: #008000;
+    color: #fff;
+}
+
+.listing-1 .content .footer .profile img{
+    width: 36px;
+    background: #fff;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.listing-1 .content .footer .profile{
+    font-size: 16px;
+    font-weight: 800;
+}
 
 
 
