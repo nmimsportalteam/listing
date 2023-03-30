@@ -1,5 +1,5 @@
 body {
-    color: #697891;
+    color: #626262;
     font-family: 'Roboto';
 }
 
@@ -19,6 +19,14 @@ body {
     border: 2px solid #4DB7FE;
     border-radius: 4px;
     opacity: 1;
+}
+
+.p-50-30 {
+    padding: 50px 30px;
+}
+
+.p-50 {
+    padding: 50px 0;
 }
 
 /*======================= HEADER CSS ===========================*/
@@ -319,13 +327,59 @@ body {
     transform: scale(1.2);
 }
 
-#home-stats {
+#top-projects {
     background: #fff;
-    padding: 30px;
+    ;
 }
 
+#featured-specialist {
+    background: #f2f2f2;
+    position: relative;
+}
 
-/* listing card */
+#featured-specialist::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #f2f2f2;
+    border-left: 30px solid transparent;
+    top: -30px;
+    left: calc(50% - 30px);
+}
+
+#featured-specialist::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/background/curve.svg);
+    bottom: -29px;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-view {
+    background: #384F95;
+    padding: 10px 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 200ms linear;
+    display: block;
+    margin: 30px auto 30px auto;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* listing card 1*/
 .listing-1 {
     /* width: 439px; */
     position: relative;
@@ -343,6 +397,7 @@ body {
     flex-flow: column;
     justify-content: space-between;
     color: #fff;
+    background: radial-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 70%));
 }
 
 .listing-1 .content .header {
@@ -360,7 +415,7 @@ body {
     font-size: 15px;
 }
 
-.listing-1 .content .header .add-to-wishlist {
+.header .add-to-wishlist {
     background: white;
     width: 30px;
     height: 30px;
@@ -372,13 +427,22 @@ body {
 
 .listing-1 .content .body {
     padding: 10px 10px 0px 10px;
-    background: rgb(0 0 0 / 50%);
+    /* background: rgb(0 0 0 / 50%); */
     text-align: left;
 }
 
 .listing-1 .content .body .title {
     font-size: 17px;
     font-weight: 600;
+}
+
+.listing-1 .content .body .price {
+    font-weight: 800;
+    background: #000;
+    padding: 0px 10px;
+    margin-bottom: 6px;
+    display: inline-block;
+    border-radius: 6px;
 }
 
 .listing-1 .content .body .description {
@@ -445,6 +509,101 @@ body {
     margin-left: 5px;
 }
 
+/* // listing card 1*/
+
+/* listing card 2*/
+
+.listing-2 {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px;
+    margin-top: 75px;
+}
+
+.listing-2 .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.listing-2 .img-box .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.listing-2 .img-box .header .badge img {
+    width: 32px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.listing-2 .img-box .header .badge {
+    display: flex;
+    align-items: center;
+}
+
+.listing-2 .img-box .header .badge span {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.listing-2 .content {
+    position: relative;
+    padding: 45px 15px 15px 15px;
+}
+
+.listing-2 .content .profile {
+    position: absolute;
+    width: 90px;
+    top: -50px;
+    left: calc(50% - 45px);
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid #4b4b4b;
+}
+
+.listing-2 .title {
+    font-size: 18px;
+}
+
+.listing-2 .description .joining-date {
+    font-size: 14px;
+}
+
+.listing-2 .description .rating {
+    text-align: center;
+}
+
+.listing-2 .description .services {
+    text-align: center;
+}
+
+.listing-2 .description .services .badge {
+    color: #000;
+    border: 1px solid #ddd;
+    margin: 6px 2px;
+    box-shadow: 0 0 2px 0px;
+}
+
+.listing-2 .contact-btn {
+    outline: 3px solid #e1e1e14a;
+    background: linear-gradient(45deg, #abe3ff, white);
+    border: 0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    transition: 0.2s;
+    margin: 14px auto 3px auto;
+}
+
+/* // listing card 2*/
 
 .slider .slick-prev:before,
 .slider .slick-next:before {
@@ -514,7 +673,6 @@ body {
     }
 }
 
-
 @media(max-width: 480px) {
     #banner-search {
         flex-wrap: wrap;
@@ -553,7 +711,6 @@ body {
         padding: 100px 15px;
     }
 }
-
 
 @media(max-width: 991px) {
 
@@ -602,18 +759,16 @@ body {
         font-size: 9px;
     }
 
-
-
 }
 
 
 .swiper {
     width: 100%;
     height: 100%;
+    padding: 15px 0;
 }
 
 .swiper-slide {
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,14 +781,32 @@ body {
     object-fit: cover;
 }
 
-.listing-carousel-button.listing-carousel-button-next2:hover {
-    right: -15px;
-    background: rgba(6, 27, 65, 0.4);
+
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    z-index: 100;
+    cursor: pointer;
+    background: rgb(0 0 0 / 80%);;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
+    transition: all 200ms linear;
+    text-align: center;
+    color: #ddd;
 }
 
-.listing-carousel-button.listing-carousel-button-next,
-.listing-carousel-button.listing-carousel-button-next2 {
+.company-slider-next {
     right: -30px;
     padding-right: 20px;
     border-radius: 60px 0 0 60px;
+}
+
+.company-slider-prev {
+    left: -30px;
+    padding-left: 20px;
+    border-radius: 0 60px 60px 0;
 }
