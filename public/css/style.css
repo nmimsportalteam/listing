@@ -517,7 +517,9 @@ body {
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 3px 1px;
-    margin-top: 75px;
+    margin-top: 30px;
+    width: 275px;
+    height: 230px;
 }
 
 .listing-2 .img-box {
@@ -558,9 +560,9 @@ body {
 
 .listing-2 .content .profile {
     position: absolute;
-    width: 90px;
-    top: -50px;
-    left: calc(50% - 45px);
+    width: 70px;
+    top: -35px;
+    left: calc(50% - 35px);
     background: #fff;
     padding: 10px;
     border-radius: 50%;
@@ -604,17 +606,6 @@ body {
 }
 
 /* // listing card 2*/
-
-.slider .slick-prev:before,
-.slider .slick-next:before {
-    font-size: 35px !important;
-    color: #787aff !important;
-}
-
-.slick-slide {
-    margin: 0 10px;
-}
-
 
 
 /* MEDIA QUERIES */
@@ -799,13 +790,17 @@ body {
     color: #ddd;
 }
 
-.company-slider-next {
+.slider-button:hover {
+    width: 90px;
+}
+
+.slider-next {
     right: -30px;
     padding-right: 20px;
     border-radius: 60px 0 0 60px;
 }
 
-.company-slider-prev {
+.slider-prev {
     left: -30px;
     padding-left: 20px;
     border-radius: 0 60px 60px 0;
