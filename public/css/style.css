@@ -364,8 +364,8 @@ body {
 
 .btn-view {
     background: #384F95;
-    padding: 10px 5px;
-    border-radius: 4px;
+    padding: 7px 5px;
+    border-radius: 3px;
     color: #fff;
     font-weight: 600;
     font-size: 12px;
@@ -377,6 +377,7 @@ body {
     width: 140px;
     text-align: center;
     text-decoration: none;
+    outline: 3px solid rgb(0 0 0 / 15%);
 }
 
 /* listing card 1*/
@@ -479,15 +480,37 @@ body {
     background: rgb(0 0 0 / 50%);
 }
 
-.listing-1 .content .footer .actions span {
-    padding: 6px 10px;
-    border-radius: 5px;
-    margin-right: 5px;
+.listing-1 .content .footer .rating-wrapper {
+    display: flex;
+    align-items: center;
 }
 
-.listing-1 .content .footer .actions .phone {
-    background: #008000;
-    color: #fff;
+.listing-1 .content .footer .rating-wrapper .rating {
+    margin-bottom: 0;
+    padding: 0px;
+    background: #384f95;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.listing-1 .content .footer .rating-wrapper .stars {
+    display: flex;
+}
+
+.listing-1 .content .footer .rating-wrapper .reviews-count {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 12px;
+}
+
+.listing-1 .content .footer .rating-wrapper .stars .star {
+    font-size: 12px;
+    color: #ffb904;
 }
 
 .listing-1 .content .footer .profile img {
@@ -606,6 +629,136 @@ body {
 }
 
 /* // listing card 2*/
+
+
+/* listing card 3 */
+
+.listing-3 {
+    /* max-width: 375px; */
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 1px;
+    margin: auto;
+}
+
+.listing-3 .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.listing-3 .img-box::after {
+    content: "";
+    background: rgb(255 255 255);
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.listing-3 .img-box .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.listing-3 .img-box .header .badge {
+    background: linear-gradient(45deg, #9dffa2, #fffd85);
+    padding: 7px 15px;
+    color: #000;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.listing-3 .img-box .header .badge {
+    display: flex;
+    align-items: center;
+}
+
+.listing-3 .img-box .header .badge span {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.listing-3 .content {
+    position: relative;
+    padding: 38px 15px 15px 15px;
+}
+
+.listing-3 .content .profile .profile-badge {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid #4b4b4b;
+    position: relative;
+    z-index: 6;
+}
+
+.listing-3 .content .profile .title {
+    position: absolute;
+    right: -109px;
+    top: 20px;
+    color: #fff;
+    z-index: 1;
+    padding: 6px 10px 4px 30px;
+    border-radius: 0px 25px 0px 0;
+    width: 269px;
+    left: 42px;
+    text-align: left!important;
+    font-size: 14px;
+}
+
+.listing-3 .content .profile {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -50px;
+    left: 15px;
+}
+
+.listing-3 .title {
+    font-size: 18px;
+}
+
+.listing-3 .description .joining-date {
+    font-size: 14px;
+}
+
+.listing-3 .description .rating {
+    text-align: center;
+}
+
+.listing-3 .description .services {
+    text-align: center;
+}
+
+.listing-3 .description .services .badge {
+    color: #000;
+    border: 1px solid #ddd;
+    margin: 6px 2px;
+    box-shadow: 0 0 2px 0px;
+}
+
+.listing-3 .contact-btn {
+    outline: 3px solid #e1e1e14a;
+    background: linear-gradient(45deg, #abe3ff, white);
+    border: 0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    transition: 0.2s;
+    margin: 14px auto 3px auto;
+}
+
+/* //listing card 3 */
 
 
 /* MEDIA QUERIES */
@@ -783,7 +936,8 @@ body {
     margin-top: -25px;
     z-index: 100;
     cursor: pointer;
-    background: rgb(0 0 0 / 80%);;
+    background: rgb(0 0 0 / 80%);
+    ;
     box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
     transition: all 200ms linear;
     text-align: center;
