@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="../public/css/bootstrap-5.3.0-alpha1.min.css">
     <link rel="stylesheet" href="../public/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../public/css/style.css">
 
 </head>
@@ -45,8 +46,10 @@
                     Add Listing
                 </button>
             </div>
+            <button id="navbar-toggler" class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
-
         <ul class="nav">
             <li>Buy</li>
             <li>Sell</li>
@@ -56,8 +59,6 @@
             <li>Blog</li>
             <li>About</li>
         </ul>
-
-
     </header>
 
     <section id="main-banner">
@@ -66,19 +67,1103 @@
             <p>Find some of the best deal in the city.</p>
 
             <div id="banner-search">
-                
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass text-info"></i>
+                    <input type="text" placeholder="What are you looking for?" />
+                </div>
+
+                <div class="location">
+                    <i class="fa-solid fa-location-dot text-info"></i>
+                    <input type="text" placeholder="Location" />
+                </div>
+
+                <div class="filters">
+                    <i class="fa-solid fa-filter text-info"></i>
+                    <input type="text" placeholder="Filters" />
+                </div>
+
+                <div class="search-btn justify-content-end">
+                    <button class="btn btn-sm p-0">
+                        <span>Search</span>
+                        <img src="../public/images/icons/search.png" />
+                    </button>
+                </div>
+            </div>
+
+            <hr class="horizontal-divider" />
+            <div class="categories">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Navi Mumbai</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Mumbai</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Pune</p>
+                        </div>
+                    </a>
+                    <a href="#" class="cat">
+                        <div class="inner-box">
+                            <img src="../public/images/icons/cityscape.png" class="img-fluid">
+                            <p>Bangalore</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <i class="down fa-solid fa-angles-down"></i>
+    </section>
+
+    <section id="top-projects" class="p-50">
+        <h3 class="text-center section-heading">Top Projects Around You</h3>
+        <hr class="horizontal-divider1" />
+        <p class="text-center mb-5">Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius,
+            nulla sit amet rutrum elementum.</p>
+
+        <div class="swiper company-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="listing-1">
+                        <div class="img-box">
+                            <img src="../public/images/realestate/heaven_project.jpg" class="img-fluid" />
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <span class="badge">
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>RERA</span>
+                                </span>
+                                <i class="fa-solid fa-heart-circle-plus add-to-wishlist"></i>
+                            </div>
+                            <div class="body-wrapper">
+                                <div class="body mt-5">
+                                    <h4 class="title">The Heaven Project The Heaven Project The Heaven Project</h4>
+                                    <div class="description">
+                                        <span class="badge">1 BHK</span>
+                                        <span class="badge">2 BHK</span>
+                                        <span class="badge">3 BHK</span>
+                                        <span class="badge location">
+                                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                            Kharghar
+                                        </span>
+                                    </div>
+                                    <span class="price">&#x20B9; 45 - 95 lakhs</span>
+                                </div>
+                                <div class="footer">
+                                    <div class="profile">
+                                        <img src="../public/images/icons/company.png">
+                                        <span class="company-name">The Paradise Group</span>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <p class="rating">4.4</p>
+                                        <div class="stars-wrapper">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star star"></i>
+                                                <i class="fa-solid fa-star star"></i>
+                                                <i class="fa-solid fa-star star"></i>
+                                                <i class="fa-solid fa-star star"></i>
+                                                <i class="fa-solid fa-star star"></i>
+                                            </div>
+                                            <p class="reviews-count">5.6k reviews</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+            </div>
+            <div class="slider-button slider-next company-slider-next">
+                <i class="fas fa-caret-right"></i>
+            </div>
+            <div class="slider-button slider-prev company-slider-prev">
+                <i class="fas fa-caret-left"></i>
+            </div>
+        </div>
+        <a href="#" class="btn-view">View All <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="featured-specialist" class="p-50">
+        <h3 class="text-center section-heading">Featured Real Estate Specialist</h3>
+        <hr class="horizontal-divider1" />
+        <p class="text-center">Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius,
+            nulla sit amet rutrum elementum.</p>
+
+        <div class="swiper specialist-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai RajesasdasdPillaiRajeshPillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai RajesasdasdPillaiRajeshPillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+                <div class="swiper-slide">
+                    <div class="listing-2">
+                        <div class="content">
+                            <div class="profile">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <div class="body">
+                                <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                                <div class="description">
+                                    <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="services">
+                                        <span class="badge">New Sale</span>
+                                        <span class="badge">Resale</span>
+                                        <span class="badge">Rent</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-sm contact-btn">Contact</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //listing item end -->
+            </div>
+            <div class="slider-button slider-next specialist-slider-next">
+                <i class="fas fa-caret-right"></i>
+            </div>
+            <div class="slider-button slider-prev specialist-slider-prev">
+                <i class="fas fa-caret-left"></i>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="listing-2">
+                    <div class="content">
+                        <div class="profile">
+                            <img src="../public/images/icons/user.png" class="img-fluid">
+                        </div>
+                        <div class="body">
+                            <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                            <div class="description">
+                                <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="services">
+                                    <span class="badge">New Sale</span>
+                                    <span class="badge">Resale</span>
+                                    <span class="badge">Rent</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-sm contact-btn">Contact</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="listing-2">
+                    <div class="content">
+                        <div class="profile">
+                            <img src="../public/images/icons/user.png" class="img-fluid">
+                        </div>
+                        <div class="body">
+                            <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                            <div class="description">
+                                <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="services">
+                                    <span class="badge">New Sale</span>
+                                    <span class="badge">Resale</span>
+                                    <span class="badge">Rent</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-sm contact-btn">Contact</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="listing-2">
+                    <div class="content">
+                        <div class="profile">
+                            <img src="../public/images/icons/user.png" class="img-fluid">
+                        </div>
+                        <div class="body">
+                            <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                            <div class="description">
+                                <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="services">
+                                    <span class="badge">New Sale</span>
+                                    <span class="badge">Resale</span>
+                                    <span class="badge">Rent</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-sm contact-btn">Contact</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="listing-2">
+                    <div class="content">
+                        <div class="profile">
+                            <img src="../public/images/icons/user.png" class="img-fluid">
+                        </div>
+                        <div class="body">
+                            <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                            <div class="description">
+                                <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="services">
+                                    <span class="badge">New Sale</span>
+                                    <span class="badge">Resale</span>
+                                    <span class="badge">Rent</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-sm contact-btn">Contact</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+
+        <a href="#" class="btn-view">View All <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section class="p-50-30">
+        <h3 class="text-center section-heading">Listings You Might Be Interested In</h3>
+        <hr class="horizontal-divider1" />
+        <p class="text-center mb-5">Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius,
+            nulla sit amet rutrum elementum.</p>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
+                <div class="listing-3">
+                    <div class="img-box">
+                        <img src="../public/images/realestate/heaven_project.jpg" class="img-fluid" />
+                        <div class="header">
+                            <span class="badge">
+                                <i class="fa-solid fa-check-double"></i>
+                                <span>RERA</span>
+                            </span>
+                            <i class="fa-solid fa-heart-circle-plus add-to-wishlist"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile">
+                            <div class="profile-badge">
+                                <img src="../public/images/icons/user.png" class="img-fluid">
+                            </div>
+                            <span class="title text-center mb-0">Rajesh Pillai</span>
+                        </div>
+
+                        <div class="body">
+                            <h4 class="title text-center mb-0">Rajesh Pillai</h4>
+                            <div class="description">
+                                <p class="joining-date text-center mb-0">Member Since Jan, 2023</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <div class="services">
+                                    <span class="badge">New Sale</span>
+                                    <span class="badge">Resale</span>
+                                    <span class="badge">Rent</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-sm contact-btn">Contact</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="../public/js/bootstrap-5.3.0-alpha1-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <script>
+        const companySlider = new Swiper(".company-slider", {
+            observer: true,
+            observeParents: true,
+            parallax: true,
+            preloadImages: false,
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            grabCursor: true,
+            mousewheel: false,
+            centeredSlides: true,
+            pagination: {
+                el: '.tc-pagination2',
+                clickable: true,
+                dynamicBullets: false,
+            },
+            navigation: {
+                nextEl: ".company-slider-next",
+                prevEl: ".company-slider-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1600: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1800: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+            },
+        });
 
-
-
-
-
-    <script src="../public/js/bootstrap-5.3.0-alpha1-bundle.min.js">
+        const specialistSlider = new Swiper(".specialist-slider", {
+            observer: true,
+            observeParents: true,
+            parallax: true,
+            preloadImages: false,
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            grabCursor: true,
+            mousewheel: false,
+            centeredSlides: true,
+            pagination: {
+                el: '.tc-pagination2',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".specialist-slider-next",
+                prevEl: ".specialist-slider-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                1600: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                },
+                1800: {
+                    slidesPerView: 6,
+                    spaceBetween: 15,
+                },
+            },
+        });
     </script>
 </body>
 
